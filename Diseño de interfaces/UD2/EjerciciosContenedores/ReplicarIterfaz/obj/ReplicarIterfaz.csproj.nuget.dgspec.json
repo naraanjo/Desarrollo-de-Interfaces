@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alvaro\\Desktop\\2DAM\\Diseño de interfaces\\ReplicarIterfaz\\ReplicarIterfaz.csproj": {}
+    "C:\\Users\\Alvaro\\Documents\\GitHub\\Desarrollo-de-Interfaces\\Diseño de interfaces\\UD2\\EjerciciosContenedores\\ReplicarIterfaz\\ReplicarIterfaz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alvaro\\Desktop\\2DAM\\Diseño de interfaces\\ReplicarIterfaz\\ReplicarIterfaz.csproj": {
+    "C:\\Users\\Alvaro\\Documents\\GitHub\\Desarrollo-de-Interfaces\\Diseño de interfaces\\UD2\\EjerciciosContenedores\\ReplicarIterfaz\\ReplicarIterfaz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\2DAM\\Diseño de interfaces\\ReplicarIterfaz\\ReplicarIterfaz.csproj",
+        "projectUniqueName": "C:\\Users\\Alvaro\\Documents\\GitHub\\Desarrollo-de-Interfaces\\Diseño de interfaces\\UD2\\EjerciciosContenedores\\ReplicarIterfaz\\ReplicarIterfaz.csproj",
         "projectName": "ReplicarIterfaz",
-        "projectPath": "C:\\Users\\Alvaro\\Desktop\\2DAM\\Diseño de interfaces\\ReplicarIterfaz\\ReplicarIterfaz.csproj",
+        "projectPath": "C:\\Users\\Alvaro\\Documents\\GitHub\\Desarrollo-de-Interfaces\\Diseño de interfaces\\UD2\\EjerciciosContenedores\\ReplicarIterfaz\\ReplicarIterfaz.csproj",
         "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alvaro\\Desktop\\2DAM\\Diseño de interfaces\\ReplicarIterfaz\\obj\\",
+        "outputPath": "C:\\Users\\Alvaro\\Documents\\GitHub\\Desarrollo-de-Interfaces\\Diseño de interfaces\\UD2\\EjerciciosContenedores\\ReplicarIterfaz\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

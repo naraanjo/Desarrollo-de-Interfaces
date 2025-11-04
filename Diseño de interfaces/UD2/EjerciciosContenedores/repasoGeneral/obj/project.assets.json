@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alvaro\\Desktop\\2DAM\\Diseño de interfaces\\repasoGeneral\\repasoGeneral.csproj",
+      "projectUniqueName": "C:\\Users\\Alvaro\\Documents\\GitHub\\Desarrollo-de-Interfaces\\Diseño de interfaces\\UD2\\EjerciciosContenedores\\repasoGeneral\\repasoGeneral.csproj",
       "projectName": "repasoGeneral",
-      "projectPath": "C:\\Users\\Alvaro\\Desktop\\2DAM\\Diseño de interfaces\\repasoGeneral\\repasoGeneral.csproj",
+      "projectPath": "C:\\Users\\Alvaro\\Documents\\GitHub\\Desarrollo-de-Interfaces\\Diseño de interfaces\\UD2\\EjerciciosContenedores\\repasoGeneral\\repasoGeneral.csproj",
       "packagesPath": "C:\\Users\\Alvaro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alvaro\\Desktop\\2DAM\\Diseño de interfaces\\repasoGeneral\\obj\\",
+      "outputPath": "C:\\Users\\Alvaro\\Documents\\GitHub\\Desarrollo-de-Interfaces\\Diseño de interfaces\\UD2\\EjerciciosContenedores\\repasoGeneral\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
