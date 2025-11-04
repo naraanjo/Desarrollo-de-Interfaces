@@ -1,0 +1,41 @@
+﻿<Window x:Class="ContenedorMenu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ContenedorMenu"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+    
+    <!--Contenedor menu de los mas usados | utiles-->
+    <Menu Name="menu1">
+
+        <!--Los guiones bajos, son porque letra es el atajo de cada boton-->
+        <MenuItem Header="_Archivo" >
+            <MenuItem Header="A_brir" IsCheckable="true" IsChecked="true"></MenuItem>
+            <MenuItem Header="_Cerrar"></MenuItem>
+            <MenuItem Header="G_uardar">
+                <MenuItem.Icon>
+                <Image Source="/icono.ico"></Image>
+                </MenuItem.Icon>
+            </MenuItem>
+            
+
+            <MenuItem Header="Ag_regar">
+                <!--Submenu-->
+                <MenuItem Header="Archivo"></MenuItem>
+                <MenuItem Header="Proyecto"></MenuItem>
+            </MenuItem>
+            
+        </MenuItem> 
+        
+        
+        <MenuItem Header="_Editar"></MenuItem>
+        <MenuItem Header="_Ver"></MenuItem>
+        <MenuItem Header="_Git"></MenuItem>
+        
+        
+    </Menu>
+    
+</Window>

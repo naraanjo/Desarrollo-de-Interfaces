@@ -1,0 +1,25 @@
+﻿<Window x:Class="WrapPanelStack.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WrapPanelStack"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    
+    <!---Este se suele usar dentro de otros contenedores-->
+   
+    <StackPanel Orientation="Vertical">
+
+        <Label Content="¿Cómo quiere el café?" FontSize="20"  Margin="4 4 4 4"></Label>
+        <Button Content="Solo" Margin="4 4 4 4"></Button>
+        <Button Content="Con leche" Margin="4 4 4 4"></Button>
+        <Button Content="Cortado" Margin="4 4 4 4"></Button>
+        <Button Content="Capuchino" Margin="4 4 4 4"></Button>
+
+    </StackPanel>
+    
+    
+</Window>

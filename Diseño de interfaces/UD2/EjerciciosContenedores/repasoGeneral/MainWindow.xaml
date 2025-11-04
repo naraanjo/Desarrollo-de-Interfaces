@@ -1,0 +1,55 @@
+﻿<Window x:Class="repasoGeneral.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:repasoGeneral"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Grid>
+
+        <ListBox SelectionMode="Extended">
+            <ListBoxItem>Elemento1</ListBoxItem>
+            <ListBoxItem>Elemento2</ListBoxItem>
+            <ListBoxItem>Elemento3</ListBoxItem>
+        </ListBox>
+
+        <StackPanel>
+
+            <ToolBarTray>
+                <ToolBar Height="26" Name="ToolBar" Width="200">
+                    <Button>BotonEjemplo</Button>
+                    <Button>Salvar</Button>
+                    <Button>Abrir</Button>
+                </ToolBar>
+
+                <ToolBar Height="26" Name="ToolBar2" Width="200">
+                    <Button>BotonEjemplo2</Button>
+                    <Button>Salvar2</Button>
+                    <Button>Abrir2</Button>
+                </ToolBar>
+            </ToolBarTray>
+        </StackPanel>
+
+        <TreeView Height="150">
+            <TreeViewItem Header="1">
+                <TreeViewItem Header="2"></TreeViewItem>
+                <TreeViewItem Header="3"></TreeViewItem>
+                <TreeViewItem Header="4"></TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+
+
+        <StatusBar Height="23" Name="StatusBAR1" Width="120">
+            <TextBlock Height="15" Text="Procesando"></TextBlock>
+            <ProgressBar Height="15" Name="ProgressBar1" Width="100" Value="20"></ProgressBar>
+        </StatusBar>
+
+
+        <PasswordBox Name="pswd" MaxLength="64" PasswordChar="*" Margin="36,320,535,42" />
+    </Grid>
+
+
+</Window>
