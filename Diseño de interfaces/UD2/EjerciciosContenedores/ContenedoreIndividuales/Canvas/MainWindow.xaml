@@ -1,0 +1,26 @@
+﻿<Window x:Class="Canvas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Canvas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Canvas>
+
+        <Button Content="BTN 1" Canvas.Left="0" Canvas.Top="0"></Button>
+        <Button Content="BTN 2" Canvas.Right="0" Canvas.Bottom="0" ></Button>
+        <Button Content="BTN 3" Canvas.Right="0" Canvas.Top="0"></Button>
+        <Button Content="BTN 4" Canvas.Left="0" Canvas.Bottom="0"></Button>
+
+
+        <Ellipse Panel.ZIndex="2" Fill="Gainsboro" Canvas.Left="25" Canvas.Top="25" Width="200" Height="200"></Ellipse>
+        <Rectangle Panel.ZIndex="3" Fill="LightBlue" Canvas.Left="25" Canvas.Top="25" Width="50" Height="50"></Rectangle>
+
+        <Rectangle Panel.ZIndex="2" Fill="LightCoral" Canvas.Left="50" Canvas.Top="50" Width="50" Height="50"></Rectangle>
+        <Rectangle Panel.ZIndex="4" Fill="LightCyan" Canvas.Left="75" Canvas.Top="50" Width="50" Height="50"></Rectangle>
+
+    </Canvas>
+</Window>
