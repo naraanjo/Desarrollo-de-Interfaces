@@ -1,0 +1,53 @@
+﻿<Window x:Class="DataBindingLogin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBindingLogin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <WrapPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+        <WrapPanel Orientation="Horizontal" >
+            <Label Content="Login" Width="120" Height="30"></Label>
+            <TextBox Name="Login" Width="120" Height="30"></TextBox>
+        </WrapPanel>
+
+        <WrapPanel Orientation="Horizontal">
+            <Label Content="Passw" Width="120" Height="30"></Label>
+            <TextBox Name="Passw" Width="120" Height="30"></TextBox>
+        </WrapPanel>
+
+        <Button Name="Añadir" Content="Añadir al combo" Click="Añadir_Click"></Button>
+
+        <ComboBox Name="cmbxUsuarios"></ComboBox>
+
+        <WrapPanel Orientation="Horizontal">
+            <Label Content="UsuarioFinal" Width="120" Height="30"></Label>
+            <TextBox Name="UsuarioFinal" Width="120" Height="30" Text="{Binding ElementName=cmbxUsuarios, Path=SelectedItem, Mode=OneWay}"></TextBox>
+        </WrapPanel>
+
+
+
+        <WrapPanel Margin="0,50,0,0" Orientation="Vertical">
+
+
+            <WrapPanel Orientation="Horizontal">
+                <Label Content="TextBox" Width="120" Height="30"></Label>
+                <TextBox Name="txtValor" Width="120" Height="30"></TextBox>
+            </WrapPanel>
+
+
+            <WrapPanel Orientation="Horizontal">
+                <Label Content="TextBox" Width="120" Height="30"></Label>
+                <TextBox Text="{Binding ElementName=txtValor, Path=Text, Mode=TwoWay}" Name="txtValorActualizado" Width="120" Height="30"></TextBox>
+            </WrapPanel>
+
+
+
+        </WrapPanel>
+        
+    </WrapPanel>
+</Window>
