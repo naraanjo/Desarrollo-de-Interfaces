@@ -1,0 +1,39 @@
+﻿<Window x:Class="PreEx4Combx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PreEx4Combx"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+        <WrapPanel Orientation="Horizontal">
+            <Label>Login:</Label>
+            <TextBox x:Name="txNombre" Width="120" Margin="20,0,0,0"></TextBox>
+        </WrapPanel>
+
+        <WrapPanel Orientation="Horizontal">
+            <Label>Password:</Label>
+            <PasswordBox x:Name="txPassword" Width="120" PasswordChar="*"/>
+        </WrapPanel>
+
+        <WrapPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <Button x:Name="btnAñadir" Content="Añadir al combo" Margin="0,40,0,20" Click="btnAñadir_Click"></Button>
+
+            <ComboBox Name="cmbxPaises">
+               
+            </ComboBox>
+
+            <!-- Binding con el item seleccionado del comboBox-->
+            <TextBox Name="resultadoCombobx" Margin="0,20,0,0" Width="120" Text="{Binding ElementName=cmbxPaises, Path=SelectedItem, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+
+        </WrapPanel>
+        
+        
+    </WrapPanel>
+    
+</Window>

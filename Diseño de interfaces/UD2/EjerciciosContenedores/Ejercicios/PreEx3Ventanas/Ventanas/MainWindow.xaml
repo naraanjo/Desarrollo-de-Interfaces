@@ -1,0 +1,94 @@
+﻿<Window x:Class="PreparacionExamen3Ventanas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PreparacionExamen3Ventanas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+            <RowDefinition Height="12*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <!--Menu inicial -->
+        <StackPanel Grid.Row="0" >
+            <Menu Name="Menu1" Background="Black">
+                <MenuItem Foreground="White" Header="Archivo">
+                    <!--Submenu -->
+                    <MenuItem Header="Nuevo"></MenuItem>
+                    <MenuItem Header="Abrir"></MenuItem>
+                    <MenuItem Header="Salir" Click="btnSalir"></MenuItem>
+                </MenuItem>
+                <MenuItem Foreground="White" Header="Editar">
+                    <!--Submenu -->
+                    <MenuItem Header="Copiar"></MenuItem>
+                    <MenuItem Header="Pegar"></MenuItem>
+                </MenuItem>
+                <MenuItem Foreground="White" Header="Ayuda">
+                    <!-- Submenu-->
+                    <MenuItem Header="Acerca de"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        
+        
+        <!-- Diferentes ventanas-->
+        <TabControl TabStripPlacement="Top" Grid.Row="1" Margin="0,5,0,0">
+            
+            <!--Ventana 1-->
+            <TabItem Header="Ventana 1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <!--Contenido de la primera ventana-->
+                    <Label Grid.Row="0">Bienvenido a la aplicacion WPF</Label>
+                    <Button Grid.Row="1" Name="btnClick" Content="Haz clic aqui" Width="80" Height="20" Click="btnClick_Click"></Button>
+                </Grid>
+            </TabItem>
+            
+            <!-- Ventana 2 -->
+            <TabItem Header="Ventana 2">
+
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+
+                    <Label Grid.Row="0">Configuraciones de la aplicacion</Label>
+
+                    <WrapPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center">
+                        <ProgressBar Height="15" Name="progressBar1" Width="100" Value="20"  Margin="0,0,0,15"/>
+                        <Button Width="80" Height="20" Content="Guardar Configuracón" ></Button>
+                    </WrapPanel>
+                    
+                </Grid>
+
+            </TabItem>
+            
+            
+            <TabItem Header="Ventana 3">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0"> Versión 1.0 de la aplicación</Label>
+                    <Button Grid.Row="1" Content="Mas información" Width="80" Height="20"></Button>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        
+    </Grid>
+</Window>

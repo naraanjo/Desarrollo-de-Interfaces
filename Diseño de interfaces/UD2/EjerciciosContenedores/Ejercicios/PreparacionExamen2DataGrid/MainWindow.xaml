@@ -1,0 +1,78 @@
+﻿<Window x:Class="FiltradoPersonas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FiltradoPersonas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <!--Uso de dockPanel para que el data pueda ocupar todo-->
+    <DockPanel LastChildFill="True">
+
+        <!---Parte de arriba-->
+        <DockPanel DockPanel.Dock="Top">
+            <!-- Agrupo la parte de arriba-->
+            <WrapPanel Orientation="Horizontal">
+                <Label Margin="20,0,0,20">Edad minima</Label>
+                <TextBox Name="EdadIntroducida" Width="120" Margin="20,0,0,20"></TextBox>
+
+                <RadioButton Name="rdbMayor" Content="Mayor" Margin="20,0,0,20" GroupName="Grupo1"></RadioButton>
+                <RadioButton Name="rdbMenor" Content="Menor" Margin="20,0,0,20" GroupName="Grupo1"></RadioButton>
+                <RadioButton Name="rdbIgual" Content="Igual" Margin="20,0,0,20" GroupName="Grupo1"></RadioButton>
+
+
+                <Button Width="120" Margin="20,0,0,20" Content="Filtrar" Click="Button_Click"></Button>
+                <Button Width="120" Margin="20,0,0,20" Content="Mostrar todos" Click="Button_Click_1"></Button>
+
+
+                <Border Height="55" Width="3" Background="Black" Margin="5,5"/>
+                <TextBox Name="txBoxNombre" Width="80" Margin="20,0,0,10"></TextBox>
+                <Button Name="FiltrarNombre" Margin="20,0,0,10" Content="Filtrar Nombre" Width="120" Click="FiltrarNombre_Click"></Button>
+
+
+                
+                
+                <Border Height="55" Width="3" Background="Black" Margin="5,5"/>
+                <ComboBox Name="CmbxOpciones" Width="80" Margin="20,0,0,10">
+                    <ComboBoxItem>Nombre</ComboBoxItem>
+                    <ComboBoxItem>Apellido</ComboBoxItem>
+                    <ComboBoxItem>Edad</ComboBoxItem>
+                </ComboBox>
+                <Button x:Name="btnOrdenar" Content="Ordenar" Width="80" Margin="20,0,0,10" Click="btnOrdenar_Click"></Button>
+
+                
+                
+                
+
+                <Border Height="55" Width="3" Background="Black" Margin="5,5"/>
+                <ComboBox Name="CmbxFunciones" Width="80"  Margin="20,0,0,10">
+                    <ComboBoxItem>Maximo</ComboBoxItem>
+                    <ComboBoxItem>Minimo</ComboBoxItem>
+                    <ComboBoxItem>Contar</ComboBoxItem>
+                    <ComboBoxItem>Media</ComboBoxItem>
+                    <ComboBoxItem>Ordenar</ComboBoxItem>
+                </ComboBox>
+
+
+                <CheckBox Name="chckBoxOrdenarSegun" Content="Ascendente"></CheckBox>
+                
+                <Button Content="Funciones Ordenas" Width="80"  Margin="20,0,0,10" Click="Button_Click_2"></Button>
+            </WrapPanel>
+        </DockPanel>
+        
+        <!-- Al ser el ultimo elemento ocupa todo el espacio disponible-->
+        <DockPanel DockPanel.Dock="Bottom">
+            
+            <!--Creacion del data grid para meter a las personas -->
+            <DataGrid Name="DataPersonas" AutoGenerateColumns="False" Margin="10,10,10,10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nombre" Binding="{ Binding Nombre}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Apellidos" Binding="{Binding Apellidos}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Edad" Binding="{Binding Edad}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+        
+    </DockPanel>
+</Window>

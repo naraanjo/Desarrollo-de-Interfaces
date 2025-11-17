@@ -1,0 +1,68 @@
+﻿<Window x:Class="Espejo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Espejo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TabControl Grid.Row="1">
+            <!-- Pesataña original-->
+            <TabItem Header="Original">
+                <StackPanel Orientation="Vertical">
+                    
+                    <RadioButton GroupName="grupo1" x:Name="rdb1" Content="Opcion 1" ></RadioButton>
+                    <RadioButton GroupName="grupo1" x:Name="rdb2" Content="Opcion 2"></RadioButton>
+                    <RadioButton GroupName="grupo1" x:Name="rdb3" Content="Opcion 3"></RadioButton>
+
+                    <CheckBox x:Name="checkBox1" Content="Opcion 4"></CheckBox>
+                    <CheckBox x:Name="checkBox2" Content="Opcion 5"></CheckBox>
+                    <CheckBox  x:Name="checkBox3" Content="Opcion 6"></CheckBox>
+
+                    <ComboBox Margin="0,20,0,0" Name="comboBoxOpciones">
+                        <ComboBoxItem Name="Opcion1" Content="Opcion 1"></ComboBoxItem>
+                        <ComboBoxItem Name="Opcion2" Content="Opcion 2"></ComboBoxItem>
+                        <ComboBoxItem Name="Opcion3" Content="Opcion 3"></ComboBoxItem>
+                    </ComboBox>
+
+                    <Slider x:Name="sliderEjemplo" Value="50" Minimum="1" Maximum="100" Margin="0,20,0,0"></Slider>
+                </StackPanel>
+            </TabItem>
+            
+            <!-- Pestaña espejo-->
+            <TabItem Header="Espejo">
+                <StackPanel Orientation="Vertical">
+
+                    <RadioButton Content="Opcion 1" IsEnabled="False" IsChecked="{Binding ElementName=rdb1, Path=IsChecked, Mode=OneWay}"></RadioButton>
+                    <RadioButton Content="Opcion 2" IsEnabled="False" IsChecked="{Binding ElementName=rdb2, Path=IsChecked, Mode=OneWay}"></RadioButton>
+                    <RadioButton Content="Opcion 3" IsEnabled="False" IsChecked="{Binding ElementName=rdb3, Path=IsChecked, Mode=OneWay}"></RadioButton>
+
+                    <CheckBox Content="Opcion 4" IsEnabled="False" IsChecked="{Binding ElementName=checkBox1, Path=IsChecked, Mode=OneWay}"></CheckBox>
+                    <CheckBox Content="Opcion 5" IsEnabled="False" IsChecked="{Binding ElementName=checkBox2, Path=IsChecked, Mode=OneWay}"></CheckBox>
+                    <CheckBox Content="Opcion 6" IsEnabled="False" IsChecked="{Binding ElementName=checkBox3, Path=IsChecked, Mode=OneWay}"></CheckBox>
+
+                    <ComboBox Margin="0,20,0,0" >
+                        <ComboBoxItem Content="Opcion 1" IsEnabled="False" IsSelected="{Binding ElementName=Opcion1, Path=IsSelected, Mode=OneWay}"></ComboBoxItem>
+                        <ComboBoxItem Content="Opcion 2" IsEnabled="False" IsSelected="{Binding ElementName=Opcion2, Path=IsSelected, Mode=OneWay}"></ComboBoxItem>
+                        <ComboBoxItem Content="Opcion 3" IsEnabled="False" IsSelected="{Binding ElementName=Opcion3, Path=IsSelected, Mode=OneWay}"></ComboBoxItem>
+                    </ComboBox>
+
+                    <Slider  Minimum="1" Maximum="100" Margin="0,20,0,0" IsEnabled="False" Value="{Binding ElementName=sliderEjemplo, Path=Value, Mode=OneWay}"></Slider>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+
+ 
+    
+    
+    
+</Window>
